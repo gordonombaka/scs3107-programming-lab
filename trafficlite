@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <unistd.h>  
+
+int main() {
+    char userInput;
+    
+    do {
+        // Red Light 
+        printf("Red Light: Cease\n");
+        sleep(5);  
+
+        // Yellow Light 
+        printf("Yellow Light: All Set\n");
+        sleep(5); 
+
+        // Green Light
+        printf("Green Light: Go\n");
+        sleep(5); 
+
+        // Ask user if they want to quit
+        printf("Enter 'X' to exit the simulation. ");
+        userInput = getchar();  
+        getchar();  
+
+       // if (userInput == 'x' || userInput == 'X') {
+        //    break;  
+       // } 
+        
+    } while (userInput != 'x' || userInput != 'X');
+    
+
+    printf("Simulation terminated. Goodbye!\n");
+    return 0;
+}
+
+
